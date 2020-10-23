@@ -21,6 +21,6 @@ jobs:
       run: |
         echo $USER
         echo $PASS
-        docker build /home/akhi/DCM_3008 --file Dockerfile --tag akhid4/dcm_webserver
+        docker build . --file Dockerfile --tag akhid4/dcm_webserver
         docker login -u $USER -p $PASS
         docker push akhid4/dcm_webserver
